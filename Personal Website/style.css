@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+
 /* Base Styles */
 body {
   background-color: #202020;
@@ -11,7 +12,7 @@ body {
     Roboto,
     Helvetica,
     sans-serif;
-  color: #fff;
+  color:  #fff;
   padding-bottom: 3098px;
   overflow-x: hidden;
 }
@@ -100,8 +101,6 @@ body {
   margin-bottom: 0px;
 }
 
-
-
 .name {
   margin: 0;
   font-size: 70px;
@@ -127,6 +126,22 @@ body {
   margin-top: 60px;
   margin-bottom: 20px;
 }
+
+#typing-text {
+  border-right: 3px solid white; /* Blinking cursor effect */
+  color: #2a77bd; /* Adjust color as needed */
+  display: inline-block;
+  
+  animation: blink 0.8s infinite;
+}
+
+/* Cursor Blinking Animation */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 
 .cta-button {
   background-color: #2a77bd;
@@ -465,7 +480,7 @@ body {
 }
 
 .about-text {
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: 0.63px;
   line-height: 1.6;
   margin: 0;
