@@ -13,7 +13,7 @@ body {
     Helvetica,
     sans-serif;
   color:  #fff;
-  padding-bottom: 3098px;
+  padding-bottom: 200px;
   overflow-x: hidden;
 }
 
@@ -24,15 +24,26 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 /* Navigation */
 .navigation {
+  position: fixed;
   display: flex;
   flex-direction: column;
-  width: 945px;
+  width: 100vw;
+  height: 50px; /* Adjust as needed */
   max-width: 100%;
   margin-left: 510px;
   font-size: 15px;
   letter-spacing: 0.63px;
+  z-index: 1000;
+  background-color: #202020;
+  backdrop-filter: blur(10px);
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
 }
 
 .nav-links {
@@ -351,7 +362,7 @@ body {
 /* About Section */
 
 .about-section {
-  margin-top: 250px;
+  margin-top: 260px;
 }
 
 .section-title {
